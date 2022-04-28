@@ -49,3 +49,15 @@ ul > .nav-menu-item{
     letter-spacing: 0.02em;
     color: #2196F3;
 }
+/* Стили для портфолио */
+main{
+    width: 1600px;
+}
+.photos {
+    display: flex; 
+    
+}
+.photo-img {
+    width: 370;
+    height: 404;
+}
