@@ -6,10 +6,11 @@
     sans-serif;
     --secondary-font: 'Raleway',
     sans-serif;
+    --text-color: #757575;
 }
 body{
     font-family:var(--main-font);
-    color: #757575;
+    color: var(--text-color);
 }
 .item {
     list-style: none;
@@ -26,8 +27,7 @@ body{
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
-    /* identical to box height */
+    line-height: 1.192;
     letter-spacing: 0.03em;
     color: #2196F3;
     text-decoration: none;
@@ -43,26 +43,26 @@ body{
 /* ====== Меню в шапке ====== */
 
 
-.nav-menu-link {
+.nav-menu-link,
+.contacts-header-link {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.142;    
     letter-spacing: 0.02em;
+}
+.nav-menu-link{
     color: #212121;
 }
 .contacts-header-link{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.142;
-    letter-spacing: 0.02em;
     color: #757575; 
 }
 .nav-menu-link:hover,
 .nav-menu-link:focus,
 .contacts-header-link:hover,
-.contacts-header-link:focus{
+.contacts-header-link:focus,
+.contacts-footer-link:hover,
+.contacts-footer-link:focus{
     color: var(--accent-color);
 }
 
@@ -123,7 +123,7 @@ body{
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
-.contacts-footer-link:hover,
+/* .contacts-footer-link:hover,
 .contacts-footer-link:focus{
     color: var(--accent-color)
-}
+} */
