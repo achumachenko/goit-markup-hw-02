@@ -2,10 +2,14 @@
 /* roboto regular bold medium black  */
 :root{
     --accent-color: #2196F3;
+    --main-font: 'Roboto',
+    sans-serif;
+    --secondary-font: 'Raleway',
+    sans-serif;
 }
 body{
-    font-family: 'Roboto',
-    sans-serif; 
+    font-family:var(--main-font);
+    color: #757575;
 }
 .item {
     list-style: none;
@@ -18,8 +22,7 @@ body{
 /* ======== логотип ======== */
 
 .logo {
-    font-family: 'Raleway',
-    sans-serif;
+    font-family: var(--secondary-font);
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
@@ -29,16 +32,12 @@ body{
     color: #2196F3;
     text-decoration: none;
 }
-.header-logo {
-    font-family: 'Raleway',
-    sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    /* identical to box height */
-    letter-spacing: 0.03em;
+
+.logo-theme-light{
     color: #000000;
+}
+.logo-theme-dark{
+    color: #FFFFFF;
 }
 
 /* ====== Меню в шапке ====== */
@@ -58,7 +57,7 @@ body{
     font-size: 14px;
     line-height: 1.142;
     letter-spacing: 0.02em;
-    color: #757575;
+    /* color: #757575; */
 }
 .nav-menu-link:hover,
 .nav-menu-link:focus,
@@ -84,13 +83,12 @@ body{
     color: #FFFFFF;
 }
 .hero-button{
-    font-family: 'Roboto',
-    sans-serif;
+    font-family: var(--main-font);
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.363;
-     display: flex;
+    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
@@ -101,4 +99,27 @@ body{
     cursor: pointer;
     width: 200px;
     height: 50px;
+}
+
+/* =========== Footer======== */
+.page-footer{
+    background: #2F303A;
+}
+.address-text{
+  
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+.contacts-footer-link{
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
 }
