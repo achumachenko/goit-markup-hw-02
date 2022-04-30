@@ -12,6 +12,9 @@ body{
     font-family:var(--main-font);
     color: var(--text-color);
 }
+h1, h2, h3, h4, h5, h6 {
+    color: #212121;
+}
 .item {
     list-style: none;
 }
@@ -24,10 +27,9 @@ body{
 
 .logo {
     font-family: var(--secondary-font);
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.192;
+    line-height: 1.19;
     letter-spacing: 0.03em;
     color: #2196F3;
     text-decoration: none;
@@ -45,10 +47,9 @@ body{
 
 .nav-menu-link,
 .contacts-header-link {
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.142;    
+    line-height: 1.14;    
     letter-spacing: 0.02em;
 }
 .nav-menu-link{
@@ -73,10 +74,9 @@ body{
     
 }
 .main-title{
-    font-style: normal;
     font-weight: 900;
     font-size: 44px;
-    line-height:1.363;
+    line-height:1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -84,13 +84,9 @@ body{
 }
 .hero-button{
     font-family: var(--main-font);
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.363;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    line-height: 1.36;
     letter-spacing: 0.06em;
     color: #FFFFFF;
     background: #2196F3;
@@ -101,25 +97,24 @@ body{
     height: 50px;
 }
 
+
 /* =========== Footer======== */
 .page-footer{
     background: #2F303A;
 }
 .address-text{
   
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.714;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
 .contacts-footer-link{
     font-family: var(--main-font);
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
