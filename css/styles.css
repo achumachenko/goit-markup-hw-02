@@ -7,13 +7,29 @@
     --secondary-font: 'Raleway',
     sans-serif;
     --text-color: #757575;
+    --logo-color: #2196F3;
+    --logo-theme-light-color: #000000;
+    --logo-theme-dark-color: #FFFFFF;
+    --title-color: #212121;
+    --nav-menu-link-color: #212121;
+    --main-title-color: #FFFFFF;
+    --hero-background: #2F303A;
+    --hero-button-color: #FFFFFF;
+    --hero-button-background: #2196F3;
+    --our_team-background: #F5F4FA;
+    --page-footer-background: #2F303A;
+    --address-text-color: #FFFFFF;
+    --contacts-footer-link-color: rgba(255, 255, 255, 0.6);
+    --filter-btn-color: #212121;
+    --filter-btn-background: #F5F4FA;
+    --filter-btn-focus-color: #FFFFFF;
 }
 body{
     font-family:var(--main-font);
     color: var(--text-color);
 }
 h1, h2, h3, h4, h5, h6 {
-    color: #212121;
+    color: var(--title-color);
 }
 .item {
     list-style: none;
@@ -31,15 +47,15 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--logo-color);
     text-decoration: none;
 }
 
 .logo-theme-light{
-    color: #000000;
+    color: var(--logo-theme-light-color);
 }
 .logo-theme-dark{
-    color: #FFFFFF;
+    color: var(--logo-theme-dark-color);
 }
 
 /* ====== Навигация ====== */
@@ -53,11 +69,12 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.02em;
 }
 .nav-menu-link{
-    color: #212121;
+    color: var(--nav-menu-link-color);
 }
 .contacts-header-link{
     color: inherit; 
 }
+
 .nav-menu-link:hover,
 .nav-menu-link:focus,
 .contacts-header-link:hover,
@@ -66,11 +83,14 @@ h1, h2, h3, h4, h5, h6 {
 .contacts-footer-link:focus{
     color: var(--accent-color);
 }
+.active {
+    color: var(--accent-color);
+}
 
 /* ====== Hero =====*/
 
 .hero{
-    background: #2F303A;
+    background: var(--hero-background);
     
 }
 .main-title{
@@ -80,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--main-title-color);
 }
 .hero-button{
     font-family: var(--main-font);
@@ -88,8 +108,9 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 16px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
-    background: #2196F3;
+    color: var(--hero-button-color);
+    background: var(--hero-button-background);
+    cursor: pointer;
   
 }
 
@@ -120,6 +141,10 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.03em;
 }
 /* =========== Наша команда ========== */
+
+.our_team{
+    background: var(--our_team-background);
+}
 .team{
     font-weight: 700;
     font-size: 36px;
@@ -146,7 +171,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* =========== Footer======== */
 .page-footer{
-    background: #2F303A;
+    background: var(--page-footer-background);
 }
 .address-text{
   
@@ -154,7 +179,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--address-text-color);
 }
 .contacts-footer-link{
     font-family: var(--main-font);
@@ -162,29 +187,42 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--contacts-footer-link-color);
 }
 
 /* ================ Portfolio =================== */
 
 
 .filter-btn{
-    font-family: 'Roboto';
+    font-family: inherit;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;    
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--filter-btn-color);
     cursor: pointer;
-    background: #F5F4FA;
+    background: var(--filter-btn-background);
     border-radius: 4px;
+}
+.filter-btn-active{
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    border-radius: 4px;
+    background: var(--accent-color);
+    color: var(--filter-btn-focus-color);
 }
 .filter-btn:hover,
 .filter-btn:focus{
-    background: #2196F3;
-    color: #FFFFFF;
+    background: var(--accent-color);
+    color: var(--filter-btn-focus-color);
 }
 
 /* ========= photos ========= */
